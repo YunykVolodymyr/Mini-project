@@ -1,0 +1,41 @@
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    font-family: sans-serif;
+}
+
+.users > div {
+    width: 45%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.users > div > button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.users > div > button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .users {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .users > div {
+        width: 90%;
+    }
+}
