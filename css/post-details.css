@@ -14,6 +14,10 @@ li {
     border-radius: 5px;
 }
 
+li li {
+    margin: 5px 30px;
+}
+
 .comments {
     display: flex;
     flex-wrap: wrap;
